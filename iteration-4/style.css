@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.block-B {
+  display: flex;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(175, 177, 177);
+}
+
+.block-element {
+  background-color: rgb(77, 146, 211);
+  width: 40rem;
+  height: 4rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}

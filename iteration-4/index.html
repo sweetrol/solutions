@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Рецепт борща</title>
+</head>
+<body>
+  <div class="wrapper">
+   <div class="test"></div>
+   <div class="block-C">
+    <div class="menu">
+      <span class="title"><%-title%></span>
+      <ul>
+        <!--Не работаеть :( -->
+        <% items.forEach(function(item) { %>
+        <li><%-item%></li>
+        <% }); %>
+      </ul>
+    </div>
+   </div>
+   <div class="mouseOut">Red</div>
+   <div class="mouseClick">Green</div>
+   <div class="mouseOver">Blue</div>
+
+   <input type="email" id="focus">
+   <div id="error"></div>
+
+   <div class="blockD">Click here</div>
+   <h1 class="element">Нажмите на текст и появится блок</h1>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
